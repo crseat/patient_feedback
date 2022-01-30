@@ -73,13 +73,15 @@ func createNewSurvey() {
 			"friend or family member? 1 = Would not recommend, 10 = Would strongly recommend",
 	}
 	recommendNumber := promptGetInput(recommendNumberContent)
-	i, err := strconv.Atoi(recommendNumber)
+	//i, err := strconv.Atoi(recommendNumber)
+	_, err := strconv.Atoi(recommendNumber)
 	if err != nil {
 		// handle error
 		fmt.Println(err)
 		os.Exit(2)
 	}
-	data.InsertResponses(i)
+	//data.InsertResponses(i)
+	data.GetItems()
 }
 
 func init() {
