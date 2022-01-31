@@ -17,4 +17,5 @@ Record whatever the patient responds with
 
 Program ends with: “Thanks again! Here’s what we heard:
 
-Prints Responses. ”```
+Prints Responses. 
+```
