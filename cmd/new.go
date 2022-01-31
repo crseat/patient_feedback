@@ -11,11 +11,6 @@ import (
 	"strconv"
 )
 
-type promptContent struct {
-	errorMsg string
-	label    string
-}
-
 // newCmd represents the new command
 var newCmd = &cobra.Command{
 	Use:   "new",

@@ -1,16 +1,12 @@
 package cmd
 
-import (
-	"github.com/Netflix/go-expect"
-)
-
+/*
 type PromptTest struct {
 	name      string
 	procedure func(*expect.Console)
 	expected  interface{}
 }
 
-/*
 func TestCreateNewSurvey(t *testing.T) {
 	data.OpenDatabase()
 	data.CreateTable("test_response")
