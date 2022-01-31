@@ -15,4 +15,6 @@ Program asks: “We appreciate the feedback, one last question: how do you feel 
 
 Record whatever the patient responds with
 
-Program ends with: “Thanks again! Here’s what we heard:”```
+Program ends with: “Thanks again! Here’s what we heard:
+
+Prints Responses. ”```
