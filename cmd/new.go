@@ -81,7 +81,7 @@ func createNewSurvey() {
 		os.Exit(2)
 	}
 	//data.InsertResponses(i)
-	data.GetItems()
+	data.GetPatient()
 }
 
 func init() {
