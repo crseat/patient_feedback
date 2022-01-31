@@ -1,0 +1,130 @@
+INFO: 2022/01/30 17:38:06 data.go:131: Waiting for table to be active...
+INFO: 2022/01/30 17:38:12 data.go:139: Responses Table Active
+ERROR: 2022/01/30 17:42:57 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:43:02 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:43:02 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:43:02 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 17:43:16 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:44:24 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:44:49 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:45:58 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:46:50 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:49:00 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:53:35 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 17:53:43 new.go:63: Input: 1
+ERROR: 2022/01/30 17:55:19 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 17:55:30 new.go:63: Input: 1
+ERROR: 2022/01/30 17:55:33 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:55:41 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:55:41 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 17:55:41 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 17:55:43 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 17:55:47 new.go:63: Input: 1\
+ERROR: 2022/01/30 18:05:53 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:06:02 new.go:63: Input: 1
+ERROR: 2022/01/30 18:08:54 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:08:58 new.go:63: Input: 1
+ERROR: 2022/01/30 18:11:06 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:11:11 new.go:63: Input: 1
+ERROR: 2022/01/30 18:11:22 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:11:24 new.go:63: Input: a
+ERROR: 2022/01/30 18:12:23 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:31 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:12:34 new.go:63: Input: 2
+ERROR: 2022/01/30 18:12:41 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:43 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:47 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:48 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:49 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:49 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:50 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:12:50 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:13:05 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:13:05 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:14:25 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:14:29 new.go:63: Input: 1
+ERROR: 2022/01/30 18:14:32 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:14:36 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:14:41 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:14:49 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:14:49 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:14:59 new.go:63: Input: 1
+ERROR: 2022/01/30 18:16:11 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:16:18 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:16:20 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:16:22 new.go:63: Input: 3
+ERROR: 2022/01/30 18:17:09 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:17:15 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:17:17 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:17:18 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:17:19 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:17:19 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:17:19 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:17:22 new.go:63: Input: 3
+ERROR: 2022/01/30 18:17:42 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:17:44 new.go:63: Input: 1
+ERROR: 2022/01/30 18:26:15 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:26:18 new.go:63: Input: d
+ERROR: 2022/01/30 18:26:23 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:27:02 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:27:09 new.go:63: Input: 1
+ERROR: 2022/01/30 18:27:46 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:27:54 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:27:54 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:27:54 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:27:57 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:28:00 new.go:63: Input: 1
+ERROR: 2022/01/30 18:28:03 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:04 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:06 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:06 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:06 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:28:17 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:26 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:28:41 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:47 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:28:51 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:32:44 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:32:44 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:32:44 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:36:36 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:36:43 new.go:63: Input: 1
+ERROR: 2022/01/30 18:36:53 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:36:53 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:36:53 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:36:56 new.go:35: &{1 Please provide a number, 1 through 10}
+INFO: 2022/01/30 18:36:57 new.go:63: Input: 1
+ERROR: 2022/01/30 18:37:03 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:37:07 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:37:23 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 18:38:05 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:13 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:14 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:14 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:14 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:15 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:15 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:15 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:15 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:16 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:16 new.go:35: &{1 Please provide a number, 1 through 10}
+ERROR: 2022/01/30 18:38:16 new.go:59: Error while starting prompt: ^C
+ERROR: 2022/01/30 19:00:17 new.go:104: Error while asking recommend question: could not find field matching recommendNum
+ERROR: 2022/01/30 19:32:06 new.go:134: Error while asking survey questions: could not find field matching recommendNum
+ERROR: 2022/01/30 19:36:51 new.go:95: Error while asking survey questions: interrupt

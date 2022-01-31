@@ -25,7 +25,7 @@ type Patient struct {
 type Response struct {
 	Diagnosis        string
 	PatientId        string
-	RecommendNumber  int
+	RecommendNumber  string
 	ExplainedWell    string
 	DiagnosisFeeling string
 }
@@ -128,7 +128,7 @@ func CreateTable() *errs.AppError {
 				return appError
 			}
 			tableStatus := "CREATING"
-			logger.InfoLogger.Println("Waiting for table to be active...")
+			logger.InfoLogger.Println("Waiting for " + tableName + " table to be active...")
 			for tableStatus != "ACTIVE" {
 				time.Sleep(1 * time.Second)
 				table, _ := svc.DescribeTable(&dynamodb.DescribeTableInput{
@@ -138,6 +138,8 @@ func CreateTable() *errs.AppError {
 			}
 			logger.InfoLogger.Println(tableName + " Table Active")
 
+		} else {
+			logger.InfoLogger.Println(tableName + " table already exists!")
 		}
 	}
 	return nil
