@@ -32,8 +32,8 @@ type Response struct {
 
 var svc *dynamodb.DynamoDB
 
-func GetPatient() (*Patient, *errs.AppError) {
-	raw, err := ioutil.ReadFile("./data/patient-feedback-raw-data.json")
+func GetPatient(filename string) (*Patient, *errs.AppError) {
+	raw, err := ioutil.ReadFile(filename)
 	if err != nil {
 		appError := errs.NewAppError("Error while reading JSON file: " + err.Error())
 		logger.ErrorLogger.Println(appError.Message)
@@ -48,9 +48,8 @@ func GetPatient() (*Patient, *errs.AppError) {
 	return &patient, nil
 }
 
-func SaveResponse(response Response) *errs.AppError {
+func SaveResponse(response Response, tableName string) *errs.AppError {
 	// Add each item to PatientData table:
-	tableName := "Responses"
 
 	av, err := dynamodbattribute.MarshalMap(response)
 	itemInput := &dynamodb.PutItemInput{
@@ -81,10 +80,7 @@ func OpenDatabase() *errs.AppError {
 	return nil
 }
 
-func CreateTable() *errs.AppError {
-
-	// Create table Movies
-	tableName := "Responses"
+func CreateTable(tableName string) *errs.AppError {
 
 	//Ensure table doesn't exist and then create it
 	_, err := svc.DescribeTable(&dynamodb.DescribeTableInput{
@@ -142,5 +138,19 @@ func CreateTable() *errs.AppError {
 			logger.InfoLogger.Println(tableName + " table already exists!")
 		}
 	}
+	return nil
+}
+
+func DeleteTable(tableName string) *errs.AppError {
+	input := &dynamodb.DeleteTableInput{
+		TableName: aws.String(tableName),
+	}
+	_, err := svc.DeleteTable(input)
+	if err != nil {
+		appError := errs.NewAppError("Error while deleting table: " + err.Error())
+		logger.ErrorLogger.Println(appError.Message)
+		return appError
+	}
+	logger.InfoLogger.Println(tableName + " Table has been Deleted.")
 	return nil
 }

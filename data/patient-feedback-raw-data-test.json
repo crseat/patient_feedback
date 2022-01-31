@@ -1,0 +1,103 @@
+{
+  "resourceType": "Bundle",
+  "id": "0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0",
+  "timestamp": "2021-04-02T12:12:21Z",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9999-9999-999-999",
+        "active": true,
+        "name": [
+          {
+            "text": "Test Testerson",
+            "family": "Testerson",
+            "given": [
+              "Test"
+            ]
+          }
+        ],
+        "contact": [
+          {
+            "system": "phone",
+            "value": "555-555-9999",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "test@testerson.com",
+            "use": "work"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1955-01-06",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "9999 Home Street"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Doctor",
+        "id": "1111-1111-1111-1111",
+        "name": [
+          {
+            "family": "Schmo",
+            "given": [
+              "Joe"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Appointment",
+        "id": "be142dc6-93bd-11eb-a8b3-0242ac130003",
+        "status": "finished",
+        "type": [
+          {
+            "text": "Endocrinologist visit"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/6739ec3e-93bd-11eb-a8b3-0242ac130003"
+        },
+        "actor": {
+          "reference": "Doctor/9bf9e532-93bd-11eb-a8b3-0242ac130003"
+        },
+        "period": {
+          "start": "2021-04-02T11:30:00Z",
+          "end": "2021-04-02T12:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Diagnosis",
+        "id": "44444-444-44-44444-44",
+        "meta": {
+          "lastUpdated": "2021-04-02T11:51:03Z"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E10-E14.9",
+              "name": "Spontaneous Combustion"
+            }
+          ]
+        },
+        "appointment": {
+          "reference": "Appointment/be142dc6-93bd-11eb-a8b3-0242ac130003"
+        }
+      }
+    }
+  ]
+}

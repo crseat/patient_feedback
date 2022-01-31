@@ -128,3 +128,4 @@ ERROR: 2022/01/30 18:38:16 new.go:59: Error while starting prompt: ^C
 ERROR: 2022/01/30 19:00:17 new.go:104: Error while asking recommend question: could not find field matching recommendNum
 ERROR: 2022/01/30 19:32:06 new.go:134: Error while asking survey questions: could not find field matching recommendNum
 ERROR: 2022/01/30 19:36:51 new.go:95: Error while asking survey questions: interrupt
+ERROR: 2022/01/30 19:54:33 new.go:102: Error while asking survey questions: interrupt

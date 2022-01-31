@@ -6,6 +6,7 @@ import (
 	"github.com/crseat/patient_feedback/data"
 	"github.com/crseat/patient_feedback/errs"
 	"github.com/crseat/patient_feedback/logger"
+	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 	"strconv"
 )
@@ -21,14 +22,14 @@ var newCmd = &cobra.Command{
 	Short: "Creates a new patient survey",
 	Long:  `Creates a new patient survey`,
 	Run: func(cmd *cobra.Command, args []string) {
-		createNewSurvey()
+		CreateNewSurvey()
 	},
 }
 
 // createNewSurvey defines the questions asked of the user.
-func createNewSurvey() *errs.AppError {
+func CreateNewSurvey() *errs.AppError {
 
-	patient, err := data.GetPatient()
+	patient, err := data.GetPatient("./data/patient-feedback-raw-data.json")
 	if err != nil {
 		appError := errs.NewAppError("Error while getting patient info: " + err.Message)
 		logger.ErrorLogger.Println(appError.Message)
@@ -103,8 +104,11 @@ func createNewSurvey() *errs.AppError {
 		return appError
 	}
 
+	//Output results
+	PrintResults(responses)
+
 	// Save the responses in our db
-	err = data.SaveResponse(responses)
+	err = data.SaveResponse(responses, TableName)
 	if err != nil {
 		appError := errs.NewAppError("Error while updating database: " + surveyErr.Error())
 		logger.ErrorLogger.Println(appError.Message)
@@ -112,6 +116,36 @@ func createNewSurvey() *errs.AppError {
 	}
 
 	return nil
+}
+
+func PrintResults(response data.Response) {
+
+	white := color.New(color.FgWhite)
+	boldWhite := white.Add(color.Bold)
+
+	// Handle recommend number
+	boldWhite.Println("\nHere's what we heard: \n")
+	recNum, _ := strconv.Atoi(response.RecommendNumber)
+	if recNum < 4 {
+		boldWhite.Println("- You would be unlikely to recommend your doctor to your friends or family.")
+	} else if recNum < 8 {
+		boldWhite.Println("- You might recommend your doctor to your friends or family.")
+	} else {
+		boldWhite.Println("- You most likely will recommend your doctor to your friends or family.")
+	}
+
+	//Handle explanation response
+	if response.ExplainedWell == "Yes" {
+		boldWhite.Println("- Your diagnosis was explained in a way you could understand by your doctor.")
+	} else {
+		boldWhite.Println("- Your diagnosis was not explained well by your doctor.")
+	}
+
+	//Handle feelings response
+	boldWhite.Println("- Here's how you feel about your diagnosis: " + response.DiagnosisFeeling)
+
+	//Exit
+	boldWhite.Println("\n Thank you for taking the survey!")
 }
 
 func init() {

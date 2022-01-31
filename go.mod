@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/AlecAivazis/survey/v2 v2.3.2
 	github.com/aws/aws-sdk-go v1.42.44
+	github.com/fatih/color v1.13.0
 	github.com/m7shapan/njson v1.0.7
 	github.com/spf13/cobra v1.3.0
 )
